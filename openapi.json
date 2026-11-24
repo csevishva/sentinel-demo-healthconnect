@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "HealthConnect API",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "Fictional healthconnect demonstration. No real customer data."
   },
   "paths": {
@@ -14,6 +14,14 @@
             "name": "cursor",
             "in": "query",
             "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": true,
             "schema": {
               "type": "string"
             }
